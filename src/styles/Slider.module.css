@@ -1,0 +1,12 @@
+.height100 {
+    height: 75vh;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.height100 img {
+    object-fit: cover;
+    border-radius: 10px;
+}
