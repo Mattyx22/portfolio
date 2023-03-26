@@ -1,0 +1,12 @@
+.whiteBackground {
+    background-color: white;
+    height: 100vh;
+}
+
+.paddingRight10 {
+    padding-right: 10%;
+}
+
+.paddingRightPanel {
+    padding: 0 4%;
+}
