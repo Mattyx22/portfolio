@@ -1,12 +1,18 @@
 .whiteBackground {
-    background-color: white;
-    height: 100vh;
+  background-color: #f8f8f8;
+  height: 100vh;
 }
 
 .paddingRight10 {
-    padding-right: 10%;
+  padding-right: 10%;
 }
 
 .paddingRightPanel {
-    padding: 0 4%;
+  padding: 0 4%;
+}
+
+.bottomText {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import { Row } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
-
+import { motion } from "framer-motion"
 import styles from '@/styles/TopSection.module.css';
 
 const TopSection = () => {
@@ -24,17 +24,27 @@ const TopSection = () => {
               </Row>
               <Row className={`${styles.paddingLeft6} ${styles.linksRow}`}>
               <div className={styles.links}>
-              <a href="https://github.com/mattyx22">GitHub</a>
+              <a href="https://github.com/mattyx22" className={styles.singleLink}>GitHub</a>
               <span> / </span>
-              <a href="#">CV</a>
+              <a href="#" className={styles.singleLink}>CV</a>
               <span> / </span>
-              <a href="https://www.behance.net/mattygt">Behance</a>
+              <a href="https://www.behance.net/mattygt" className={styles.singleLink}>Behance</a>
               </div>
               </Row>
             </Col>
            <Col xs={12} md={6} className={`${styles.paddingRight6} ${styles.positionRelative} ${styles.rightPanel}`}>
               <div className={styles.circle}></div>
-              <div className={styles.square}></div>
+  <motion.div
+  className={styles.square}
+    drag
+    dragConstraints={{
+      top: -100,
+      left: -100,
+      right: 50,
+      bottom: 50,
+    }}
+  />
+              {/* <div className={styles.square}></div> */}
            </Col>
         </Row>
     </Container>

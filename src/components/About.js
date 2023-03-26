@@ -1,11 +1,29 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from '@/styles/About.module.css'
+import { motion } from "framer-motion"
 
 const About = () => {
+
+
   return (
     <>
-    <section className={styles.whiteBackground} id="about">
+    <motion.div
+      className="overlay"
+      whileInView={{ backgroundColor: "#ffffff" }}
+      initial={{ backgroundColor: "#f8f8f8" }}
+      viewport={{ once: true }}
+      exit={{
+        opacity: 0,
+        backgroundColor: "#f8f8f8",
+        transition: { backgroundColor: { delay: 1 }, opacity: { delay: 0.1 } }
+      }}
+      transition={{
+        duration: 1,
+        delay: 0.5
+      }}
+    >
+    <section  id="about">
     <Container>
         <h2 className="sectionTitle">About.</h2>
         <Row>
@@ -18,7 +36,7 @@ const About = () => {
           </p>
           </Col>
           <Col xs={12} md={5} className={`mt-8 ${styles.paddingRightPanel}`}>
-            <h4 className="">Developing</h4>
+            <h4 className="mb-3">Developing</h4>
             <Row>
               <Col>
                 <p>HTML 5</p>
@@ -39,7 +57,7 @@ const About = () => {
                 <p>Woocommerce</p>
               </Col>
             </Row>
-            <h4 className="">Design</h4>
+            <h4 className="mt-5 mb-3">Design</h4>
             <Row>
               <Col>
                 <p>Photoshop</p>
@@ -52,11 +70,11 @@ const About = () => {
           </Col>
         </Row>
         <Row>
-          <p className="mt-8">I am excited about the new opportunities that this knowledge will bring me and can`&apos;`t wait to see what I can create with it.</p>
+          <p className={`mt-8 mb-8 ${styles.bottomText}`}>I am excited about the new opportunities that this knowledge will bring me and can&apos;t wait to see what I can create with it.</p>
         </Row>
       </Container>
     </section>
-      
+    </motion.div>
     </>
   )
 }
