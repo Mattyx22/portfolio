@@ -1,9 +1,14 @@
 .navbarColor {
-    background-color: #202124 !important;
+    background-color: rgba(0,0,0,0) !important;
     padding: 2%;
 }
 
-.navPadding {
+.navlinkStyling {
     padding-left: 2% !important;
     padding-right: 2% !important;
+    color: #4E4E4E !important;
 }
+
+.navbarToggler span {
+    background-image: url('/menu.svg');
+  }

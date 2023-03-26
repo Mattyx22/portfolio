@@ -3,22 +3,38 @@ import Container from 'react-bootstrap/Container';
 import { Row } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 
-import Slider from './Slider';
-
 import styles from '@/styles/TopSection.module.css';
 
 const TopSection = () => {
   return (
     <>
     <Container fluid>
-        <Row className={styles.height75}>
-            <Col className={styles.padding10}>
-            <h1>Mateusz Komar. <span className={styles.webdev}>Webdeveloper.</span></h1>
-            <h2>I develop <span className={styles.ideas}>ideas</span> for the web.</h2>
-            <p>I'm a developer specializing in web technologies. Passionate about creating dynamic and responsive user interfaces that deliver an outstanding user experience.</p>
+        <Row className={styles.height100}>
+            <Col xs={12} md={6}>
+              <Row className={styles.paddingTextRow}>
+              <h1 className={styles.title}>I develop ideas for the web.</h1>
+              <p className={styles.description}>Hi! I’m Mateusz Komar. Passionate about creating dynamic and responsive user interfaces that deliver an outstanding user experience.</p>
+              </Row>
+              <Row className={styles.paddingLeft6}>
+              <div className={styles.worksButton}>
+                <a href="#works">
+                  See my works.
+                </a>
+              </div>
+              </Row>
+              <Row className={`${styles.paddingLeft6} ${styles.linksRow}`}>
+              <div className={styles.links}>
+              <a href="https://github.com/mattyx22">GitHub</a>
+              <span> / </span>
+              <a href="#">CV</a>
+              <span> / </span>
+              <a href="https://www.behance.net/mattygt">Behance</a>
+              </div>
+              </Row>
             </Col>
-           <Col>
-                <Slider />
+           <Col xs={12} md={6} className={`${styles.paddingRight6} ${styles.positionRelative} ${styles.rightPanel}`}>
+              <div className={styles.circle}></div>
+              <div className={styles.square}></div>
            </Col>
         </Row>
     </Container>
