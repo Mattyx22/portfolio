@@ -52,7 +52,7 @@ const About = () => {
           </Col>
         </Row>
         <Row>
-          <p className="mt-8">I am excited about the new opportunities that this knowledge will bring me and can't wait to see what I can create with it.</p>
+          <p className="mt-8">I am excited about the new opportunities that this knowledge will bring me and can`&apos;`t wait to see what I can create with it.</p>
         </Row>
       </Container>
     </section>

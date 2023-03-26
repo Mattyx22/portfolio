@@ -14,7 +14,7 @@ const NavBar = ({title}) => {
         <Navbar key="lg" bg="dark" variant="dark" expand="lg" className={`${styles.navbarColor}`} fixed="top">
           <Container fluid>
             <Navbar.Brand href="#">
-              <Image src="/logo.png" width="60" height="45" />  
+              <Image src="/logo.png" width="60" height="45" alt="logo" />  
             </Navbar.Brand>
             <Navbar.Toggle className={styles.navbarToggler} aria-controls={`offcanvasNavbar-expand-lg`} />
             <Navbar.Offcanvas
