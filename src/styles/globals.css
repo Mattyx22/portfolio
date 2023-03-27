@@ -2,6 +2,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #F8F8F8;
   color: black;
+  overflow-x: hidden;
 }
 
 .sectionTitle {
@@ -24,4 +25,9 @@ body {
 
 .text {
   font-size: 1.5rem;
+}
+
+.navbarScrolled {
+  background-color: #F8F8F8;
+  
 }

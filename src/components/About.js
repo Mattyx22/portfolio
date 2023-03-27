@@ -1,14 +1,23 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from '@/styles/About.module.css'
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 
 const About = () => {
 
-
+  
+  const ref = useRef(null);
+  const { scrollY } = useScroll({target: ref});
+  const background = useTransform(
+    scrollY,
+    [-5000, -2500, 0, 2500, 5000],
+    // grey, white, green, red, yellow
+    ["#f8f8f8", "#f8f8f8", "#ffffff", "#f8f8f8", "#f8f8f8"]
+  );
+  
   return (
     <>
-    <motion.div
+    {/* <motion.div
       className="overlay"
       whileInView={{ backgroundColor: "#ffffff" }}
       initial={{ backgroundColor: "#f8f8f8" }}
@@ -22,6 +31,11 @@ const About = () => {
         duration: 1,
         delay: 0.5
       }}
+    > */}
+
+    <motion.div
+      style={{ background }}
+    
     >
     <section  id="about">
     <Container>
