@@ -1,5 +1,10 @@
 import React, { useRef, useEffect } from "react";
-import { motion, useInView, useAnimation, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useAnimation,
+  AnimatePresence,
+} from "framer-motion";
 import { SplitText } from "./SplitText";
 
 const AnimatedText = ({ children }) => {

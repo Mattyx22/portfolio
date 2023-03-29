@@ -1,9 +1,7 @@
-import React, {useRef} from 'react'
-import { motion, useInView } from "framer-motion"
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
-
-const RevealText = ({children}) => {
-
+const RevealText = ({ children }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -20,6 +18,6 @@ const RevealText = ({children}) => {
       </span>
     </div>
   );
-}
+};
 
-export default RevealText
+export default RevealText;

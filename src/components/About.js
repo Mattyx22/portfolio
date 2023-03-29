@@ -40,11 +40,7 @@ const About = () => {
                   </p>
                 </RevealText>
               </Col>
-              <Col
-                xs={12}
-                md={5}
-                className={styles.paddingRightPanel}
-              >
+              <Col xs={12} md={5} className={styles.paddingRightPanel}>
                 <Skills>
                   <h4 className="mb-3">Developing</h4>
                   <Row>
@@ -82,14 +78,12 @@ const About = () => {
             </Row>
 
             <Row>
-            
               <div className={`mt-8 mb-10 ${styles.bottomText}`}>
-              <AnimatedText>
+                <AnimatedText>
                   I am excited about the new opportunities that this knowledge
-                  will bring me and cant wait to see what I can create
-                  with it.
-                  </AnimatedText>
-              </div> 
+                  will bring me and cant wait to see what I can create with it.
+                </AnimatedText>
+              </div>
             </Row>
           </Container>
         </section>

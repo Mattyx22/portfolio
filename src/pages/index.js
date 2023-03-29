@@ -30,7 +30,6 @@ export default function Home() {
         <About />
         <Experience />
         <About2 />
-
       </main>
     </>
   );
