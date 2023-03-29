@@ -26,15 +26,15 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
-      <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin async></script>
+      <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossOrigin async></script>
 
 <script
   src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
-  crossorigin async></script>
+  crossOrigin async></script>
 
 <script
   src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
-  crossorigin async></script>
+  crossOrigin async></script>
     </Html>
   )
 }
