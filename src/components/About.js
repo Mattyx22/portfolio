@@ -1,45 +1,55 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from '@/styles/About.module.css'
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform, useInView } from "framer-motion"
+
+
+function Section({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <section ref={ref}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          width: 200,
+    height: 200,
+    background: "black",
+        }}
+      >
+        {children}
+      </span>
+    </section>
+  );
+}
 
 const About = () => {
+  const { scrollYProgress } = useScroll();
+
+  // const ref = useRef(null);
+  // const { scrollY } = useScroll({target: ref});
+  // const background = useTransform(
+  //   scrollY,
+  //   [-5000, -2500, 0, 2500, 5000],
+  //   // grey, white, green, red, yellow
+  //   ["#f8f8f8", "#f8f8f8", "#ffffff", "#f8f8f8", "#f8f8f8"]
+  // );
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  
 
   
-  const ref = useRef(null);
-  const { scrollY } = useScroll({target: ref});
-  const background = useTransform(
-    scrollY,
-    [-5000, -2500, 0, 2500, 5000],
-    // grey, white, green, red, yellow
-    ["#f8f8f8", "#f8f8f8", "#ffffff", "#f8f8f8", "#f8f8f8"]
-  );
   
   return (
     <>
-    {/* <motion.div
-      className="overlay"
-      whileInView={{ backgroundColor: "#ffffff" }}
-      initial={{ backgroundColor: "#f8f8f8" }}
-      viewport={{ once: true }}
-      exit={{
-        opacity: 0,
-        backgroundColor: "#f8f8f8",
-        transition: { backgroundColor: { delay: 1 }, opacity: { delay: 0.1 } }
-      }}
-      transition={{
-        duration: 1,
-        delay: 0.5
-      }}
-    > */}
-
-    <motion.div
-      style={{ background }}
-    
-    >
-    <section  id="about">
+    <motion.div style={{width: 400, height: 400, background: 'black', scaleX: scrollYProgress}}/>
+    <section id="about">
     <Container>
         <h2 className="sectionTitle">About.</h2>
+        <Section>Test</Section>
         <Row>
           <Col xs={12} md={7} className={styles.paddingRight10}>
           <p className="mt-8 text">
@@ -88,7 +98,6 @@ const About = () => {
         </Row>
       </Container>
     </section>
-    </motion.div>
     </>
   )
 }
