@@ -7,9 +7,6 @@ import styles from "@/styles/NavBar.module.css";
 
 import Image from "next/image";
 
-import { useRecoilState } from "recoil";
-import { navBackgroundColor } from "@/atoms/navbar";
-
 const NavBar = ({ title }) => {
   const [navBackground, setNavBackground] = useState(false);
 
@@ -29,9 +26,6 @@ const NavBar = ({ title }) => {
       document.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const [bgColor, setBgColor] = useRecoilState(navBackgroundColor);
-
   return (
     <>
       <Navbar
@@ -39,11 +33,11 @@ const NavBar = ({ title }) => {
         // bg="dark"
         style={{
           transition: "1s ease",
-          backgroundColor: navBackground ? "#ffffff" : "transparent",
+          // backgroundColor: navBackground ? "#ffffff" : "transparent",
         }}
         variant="dark"
         expand="lg"
-        className={`${styles.navbarColor}`}
+        className={`${navBackground ? 'navbarColor' : 'navbarTransparent'}`}
         fixed="top"
         id="navbar"
       >

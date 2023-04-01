@@ -1,9 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import styles from "@/styles/Experience.module.css";
 
-import { useRecoilState } from "recoil";
-import { navBackgroundColor } from "@/atoms/navbar";
-
 import { motion, useInView, AnimatePresence, useScroll } from "framer-motion";
 
 const Experience = () => {
@@ -31,18 +28,6 @@ const Experience = () => {
       borderRadius: "100%",
     },
   };
-
-  const [bgColor, setBgColor] = useRecoilState(navBackgroundColor);
-
-  const background = () => {};
-
-  useEffect(() => {
-    if (isInView) {
-      setBgColor("#000000");
-    } else {
-      setBgColor("#ffffff");
-    }
-  });
 
   return (
     <div className="d-flex justify-content-center align-items-center">
