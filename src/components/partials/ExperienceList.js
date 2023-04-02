@@ -18,7 +18,7 @@ const ExperienceList = () => {
                 {experience.map((item, index) => {
                     return (
                         <>
-                            <Accordion.Item eventKey={index}>
+                            <Accordion.Item eventKey={index} key={index}>
                                 <Accordion.Header>
                                 <span className={styles.company}>{item.company}</span>
                                     <span className={styles.title}>- {item.title}</span>
@@ -26,7 +26,7 @@ const ExperienceList = () => {
                                 </Accordion.Header>
                                 <Accordion.Body>
                                     {experience[index].description.map((desc, index) => {
-                                        return <p>- {desc}</p>
+                                        return <p key={index}>- {desc}</p>
                                     })}
                                 </Accordion.Body>
                             </Accordion.Item>
