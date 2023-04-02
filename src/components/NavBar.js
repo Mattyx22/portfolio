@@ -8,24 +8,40 @@ import styles from "@/styles/NavBar.module.css";
 import Image from "next/image";
 
 const NavBar = ({ title }) => {
-  const [navBackground, setNavBackground] = useState(false);
 
-  const navRef = useRef();
-  navRef.current = navBackground;
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+
+    if (typeof window !== 'undefined') { 
+      if (window.scrollY > lastScrollY) { 
+        setShow(false); 
+      } else { 
+        setShow(true);  
+      }
+
+      setLastScrollY(window.scrollY); 
+    }
+  };
+  
 
   useEffect(() => {
-    const handleScroll = () => {
-      const show = window.scrollY > 50;
-      if (navRef.current !== show) {
-        setNavBackground(show);
-      }
-    };
 
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      if (typeof window !== 'undefined') {
+        window.addEventListener('scroll', controlNavbar);
+  
+        // cleanup function
+        return () => {
+          window.removeEventListener('scroll', controlNavbar);
+        };
+      }
+
+
+
+  }, [lastScrollY]);
+
+
   return (
     <>
       <Navbar
@@ -37,7 +53,7 @@ const NavBar = ({ title }) => {
         }}
         variant="dark"
         expand="lg"
-        className={`${navBackground ? 'navbarColor' : 'navbarTransparent'}`}
+        className={`${show ? 'show' : 'hidden'} navbarColor`}
         fixed="top"
         id="navbar"
       >

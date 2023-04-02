@@ -2,7 +2,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #F8F8F8;
   color: black;
-  overflow-x: hidden;
+  overflow: visible;
   scroll-behavior: smooth;
   --black: #000000;
   --ash-black: #222;
@@ -53,8 +53,8 @@ body {
 }
 
 .navbarColor {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgb(205 205 205 / 37%);
+  background: rgba(237, 237, 237, 0.75);
+  box-shadow: 0 8px 32px 0 rgb(237 237 237 / 14%);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-bottom-left-radius: 10px;
@@ -64,4 +64,12 @@ body {
 
 .navbarTransparent {
   padding: 1% 1%;
+}
+
+.hidden {
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+
+.show {
+  transform:translateY(0); transition: all 0.3s ease-in-out;
 }

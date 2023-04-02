@@ -6,6 +6,7 @@ import NavBar from "@/components/NavBar";
 import TopSection from "@/components/TopSection";
 import About from "@/components/About";
 import About2 from "@/components/About2";
+import About3 from "@/components/About3";
 import Experience from "@/components/Experience";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +28,7 @@ export default function Home() {
       <main className={styles.main}>
         <NavBar title="Mateusz Komar" />
         <TopSection />
+        <About3 />
         <About />
         <Experience />
         <About2 />

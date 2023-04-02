@@ -1,15 +1,45 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import { Row } from "react-bootstrap";
-import Col from "react-bootstrap/Col";
+import React, { useEffect, useRef } from "react";
+import { Row, Col, Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import styles from "@/styles/TopSection.module.css";
 
 const TopSection = () => {
+
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    const updateMousePosition = (ev) => {
+      if (!heroRef.current) return;
+      const { clientX, clientY } = ev;
+      heroRef.current.style.setProperty("--x", `${clientX}px`);
+      heroRef.current.style.setProperty("--y", `${clientY}px`);
+    };
+
+    window.addEventListener("mousemove", updateMousePosition);
+
+    return () => {
+      window.removeEventListener("mousemove", updateMousePosition);
+    };
+  }, []);
+
+
+
   return (
     <>
-      <Container fluid>
-        <Row className={styles.height100}>
+     <style jsx>{`
+        .hero {
+          height: 100vh;
+          width: 100%;
+          background-image: radial-gradient(
+            circle farthest-side at var(--x, 100px) var(--y, 100px),
+            #ebebeb 0%,
+            transparent 100%
+          );
+        }
+      `}</style>
+    <div ref={heroRef} className="hero">
+    <Container fluid>
+    <Row className={styles.height100}>
           <Col xs={12} md={6}>
             <Row className={styles.paddingTextRow}>
               <h1 className={styles.title}>I develop ideas for the web.</h1>
@@ -66,6 +96,7 @@ const TopSection = () => {
           </Col>
         </Row>
       </Container>
+      </div>
     </>
   );
 };
