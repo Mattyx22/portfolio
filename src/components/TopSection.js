@@ -25,7 +25,7 @@ const TopSection = () => {
 
 
   return (
-    <>
+    <div id="home">
      <style jsx>{`
         .hero {
           height: 100vh;
@@ -97,7 +97,7 @@ const TopSection = () => {
         </Row>
       </Container>
       </div>
-    </>
+    </div>
   );
 };
 

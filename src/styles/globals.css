@@ -4,21 +4,6 @@ body {
   color: black;
   overflow: visible;
   scroll-behavior: smooth;
-  --black: #000000;
-  --ash-black: #222;
-  --white: #fafafa;
-  --sky: #00ccff;
-  --green: #22dddd;
-  --blue: #1300ff;
-  --dusk: #6600ff;
-  --purple: #9900ff;
-  --pink: #ff0066;
-  --red: #fe0222;
-  --orange: #fd7702;
-  --yellow: #ffbb00;
-
-  --background: var(--dusk);
-  --accent: var(--white);
 }
 
 .sectionTitle {
@@ -52,9 +37,16 @@ body {
   line-height: 3.2rem;
 }
 
+@media (max-width: 992px){
+  .text {
+    font-size: 5vw;
+    line-height: 1.6rem;
+  }
+}
+
 .navbarColor {
   background: rgba(237, 237, 237, 0.75);
-  box-shadow: 0 8px 32px 0 rgb(237 237 237 / 14%);
+  /* box-shadow: 0 8px 32px 0 rgb(237 237 237 / 14%); */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-bottom-left-radius: 10px;

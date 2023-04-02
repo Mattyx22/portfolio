@@ -1,18 +1,24 @@
-.whiteBackground {
-  background-color: #f8f8f8;
-  height: 100vh;
+.containerHeight {
+  height: 500vh;
 }
 
-.paddingRight10 {
-  padding-right: 10%;
+.sectionTitle {
+  text-align: center;
+  font-size: 3.1875rem;
+  font-weight: 600;
+  margin-top: 10vh;
 }
 
-.paddingRightPanel {
-  padding: 0 4%;
+.center {
+  text-align: center;
 }
 
-.bottomText {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
+.skills {
+  width: 25vw;
+}
+
+@media (max-width: 992px) {
+  .skills {
+    width: 90vw;
+  }
 }
