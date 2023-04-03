@@ -15,16 +15,30 @@
 }
 
 .company {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .title {
-    color: rgb(20, 20, 20);
+    color: rgb(230, 230, 230);
     margin-left: 5px;
 }
 
 .dates {
     font-size: 0.8rem;
-    color: rgb(48, 48, 48);
+    color: rgb(202, 202, 202);
     margin-left: 20px;
 }
+
+.accordionBgColor {
+    --bs-accordion-color: #ffffff;
+    --bs-accordion-bg: #222;
+    --bs-accordion-border-color: #303030;
+}
+
+/* .accordionHeader .accordionButton {
+    background-color: #2a2a2a;
+}
+
+.accordionHeader .accordionButton .collapsed{
+    background-color: inherit;
+} */

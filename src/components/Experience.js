@@ -60,9 +60,10 @@ const Experience = () => {
   });
 
   const titleOffset = isMobile ? "-5%" : "-30%";
+  const xTitle = useTransform(scrollYProgress, [0.1, 0.3, 0.7, 1], ["0%", titleOffset, titleOffset, "-100%"]);
 
-
-  const xTitle = useTransform(scrollYProgress, [0.1, 0.4], ["0%", titleOffset]);
+  const xExp = useTransform(scrollYProgress, [0.2, 0.5, 0.7, 1], ["100%", "0%", "0%", "-100%"]);
+  const opacityX = useTransform(scrollYProgress, [0.3, 0.45, 0.70, 1], [0, 1, 1, 0])
 
   return (
     <div ref={targetRef} id="experience">
@@ -83,7 +84,9 @@ const Experience = () => {
       </div>
       <div className={styles.height}>
         <motion.h2 className={styles.sectionTitle} style={{ x: xTitle, position, top: "10vh" }}>Experience.</motion.h2>
-        <ExperienceList ></ExperienceList>
+        <motion.div style={{x: xExp, position, opacity: opacityX, color: "white", top: "30vh", height: "100vh"}}>
+          <ExperienceList />
+        </motion.div>
       </div>
     </div>
 

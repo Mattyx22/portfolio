@@ -19,7 +19,7 @@ const About = () => {
     );
 
 
-    const opacityDescription = useTransform(scrollYProgress, [0.20, 0.3, 0.55], [0, 1, 0]);
+    const opacityDescription = useTransform(scrollYProgress, [0.20, 0.3, 0.45 ,0.55], [0, 1, 1, 0]);
 
 
     const xSkills = useTransform(scrollYProgress, [0.60, 0.8, 1], ["-100%", "0%", "80%"])
@@ -52,7 +52,7 @@ const About = () => {
                     </p>
                 </motion.div>
 
-                <motion.div className="skills" style={{ x: xSkills, opacity: opacitySkills, position, top: "27vh", left: "50%" }}>
+                <motion.div className={styles.skills} style={{ x: xSkills, opacity: opacitySkills, position, top: "27vh", left: "50%" }}>
                     <h4 className="mb-3">Developing</h4>
                     <Row>
                         <Col>

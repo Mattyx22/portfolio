@@ -14,19 +14,19 @@ const ExperienceList = () => {
 
     return (
         <div className={styles.center}>
-            <Accordion className={styles.listWidth} defaultActiveKey="0">
+            <Accordion className={`${styles.listWidth} ${styles.accordionBgColor}`} defaultActiveKey="0">
                 {experience.map((item, index) => {
                     return (
                         <>
-                            <Accordion.Item eventKey={index} key={index}>
-                                <Accordion.Header>
+                            <Accordion.Item eventKey={index} key={`c-${index}`}>
+                                <Accordion.Header style={styles.accordionHeader}>
                                 <span className={styles.company}>{item.company}</span>
                                     <span className={styles.title}>- {item.title}</span>
                                     <span className={styles.dates}>{item.dates}</span>
                                 </Accordion.Header>
                                 <Accordion.Body>
                                     {experience[index].description.map((desc, index) => {
-                                        return <p key={index}>- {desc}</p>
+                                        return <p key={`e-${index}`}>- {desc}</p>
                                     })}
                                 </Accordion.Body>
                             </Accordion.Item>

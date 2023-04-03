@@ -29,7 +29,7 @@ export default function Home() {
         <TopSection />
         <About />
         <Experience />
-        {/* <About2 /> */}
+        <About2 />
       </main>
     </>
   );
