@@ -52,9 +52,9 @@ const About = () => {
                     </p>
                 </motion.div>
                 
-                <motion.div className={styles.skills} style={{opacity: opacitySkills, position, top: "27vh", left: "50%" }}>
-                    <h4 className="mb-3 text-center">Developing</h4>
-                    <div className="d-flex justify-content-center text-center">
+                <motion.div className={`${styles.skills}`} style={{opacity: opacitySkills, position, top: "27vh", left: "50%" }}>
+                    <h4 className="mb-3">Developing</h4>
+                    <div>
                     <Row>
                         <Col>
                             <p>HTML 5</p>
@@ -76,8 +76,8 @@ const About = () => {
                         </Col>
                     </Row>
                     </div>
-                    <h4 className="mt-5 mb-3 text-center">Design</h4>
-                    <div className="d-flex justify-content-center text-center">
+                    <h4 className="mt-5 mb-3">Design</h4>
+                    <div>
                     <Row>
                         <Col>
                             <p>Photoshop</p>

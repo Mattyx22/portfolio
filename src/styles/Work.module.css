@@ -17,3 +17,14 @@
     font-weight: 600;
     top: 20vh;
 }
+
+.projectDesc {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+}
+
+.image {
+    border-radius: 14px !important;
+}

@@ -42,20 +42,23 @@ const Work = () => {
 
     const scaleImage1 = useTransform(scrollYProgress, [0.3, 0.4, 0.45, 0.5, 0.6, 0.8], [0, 0.9, 0.8, 0.7, 0.7, 0]);
 
-    const opacityDesc1 = useTransform(scrollYProgress, [0.45, 0.70, 0.75, 0.8], [0, 1, 1, 0]);
+    const opacityDesc1 = useTransform(scrollYProgress, [0.45, 0.60, 0.75, 0.8], [0, 1, 1, 0]);
 
     return (
         <div className={styles.height} ref={targetRef}>
             <motion.h2 className={styles.sectionTitle} style={{ position, x: xTitle, position, top: "10vh" }}>Work.</motion.h2>
 
-            <motion.div className="element d-flex justify-content-center" style={{position, xImage1, height: "100vh", scale: scaleImage1, x: xImage1, top: "1vh"}}>
-                <Image src="/work/loca.jpg" width="1400" height="1054"></Image>
-               
+            <motion.div className="element d-flex justify-content-center" style={{ position, xImage1, height: "100vh", scale: scaleImage1, x: xImage1, top: "1vh" }}>
+                <Image src="/work/loca.jpg" width="1400" height="1054" style={{borderRadius: "14px"}}></Image>
             </motion.div>
-            <motion.div className="desc" style={{position, top: "20vh", opacity: opacityDesc1}}>
-                    <span className={styles.projectTitle}>Loca</span>
-                    <span className="projectDesc">UI design of app to manage drivers</span>
-                </motion.div>
+            <motion.div style={{ position, top: "20vh", opacity: opacityDesc1 }}>
+                <span className={styles.projectTitle}>Loca</span>
+            </motion.div>
+
+            <motion.div style={{ position, top: "80vh", opacity: opacityDesc1 }}>
+            <span className={styles.projectDesc}>UI design of app to manage drivers</span>
+            </motion.div>
+            
         </div>
     )
 }
