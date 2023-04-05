@@ -7,6 +7,7 @@ import TopSection from "@/components/TopSection";
 import About from "@/components/About";
 import About2 from "@/components/About2";
 import Experience from "@/components/Experience";
+import Work from "@/components/Work";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,8 @@ export default function Home() {
         <TopSection />
         <About />
         <Experience />
-        <About2 />
+        {/* <About2 /> */}
+        <Work />
       </main>
     </>
   );

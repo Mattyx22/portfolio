@@ -1,0 +1,19 @@
+.height {
+    height: 800vh;
+    background-color: gray;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-size: 3.1875rem;
+    font-weight: 600;
+    color: white;
+}
+
+.projectTitle {
+    position: absolute;
+    right: 20vw;
+    font-size: 3rem;
+    font-weight: 600;
+    top: 20vh;
+}
