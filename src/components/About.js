@@ -51,9 +51,10 @@ const About = () => {
                         delving into the world of Flutter.
                     </p>
                 </motion.div>
-
-                <motion.div className={styles.skills} style={{ x: xSkills, opacity: opacitySkills, position, top: "27vh", left: "50%" }}>
-                    <h4 className="mb-3">Developing</h4>
+                
+                <motion.div className={styles.skills} style={{opacity: opacitySkills, position, top: "27vh", left: "50%" }}>
+                    <h4 className="mb-3 text-center">Developing</h4>
+                    <div className="d-flex justify-content-center text-center">
                     <Row>
                         <Col>
                             <p>HTML 5</p>
@@ -74,7 +75,9 @@ const About = () => {
                             <p>Woocommerce</p>
                         </Col>
                     </Row>
-                    <h4 className="mt-5 mb-3">Design</h4>
+                    </div>
+                    <h4 className="mt-5 mb-3 text-center">Design</h4>
+                    <div className="d-flex justify-content-center text-center">
                     <Row>
                         <Col>
                             <p>Photoshop</p>
@@ -84,7 +87,9 @@ const About = () => {
                             <p>Adobe XD</p>
                         </Col>
                     </Row>
+                    </div>
                 </motion.div>
+                
             </Container>
         </div>
 
