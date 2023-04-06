@@ -1,5 +1,5 @@
 .height {
-    height: 800vh;
+    height: 1000vh;
     background-color: black;
 }
 
@@ -27,4 +27,8 @@
 
 .image {
     border-radius: 14px !important;
+}
+
+.imgContainer {
+    z-index: 99;
 }
