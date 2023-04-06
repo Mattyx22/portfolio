@@ -7,6 +7,26 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #26083f #3e1c64;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #26083f;
+  border-radius: 12px;
+  border: 0px none #ffffff;
+}
+
 .sectionTitle {
   font-size: 3.1875rem;
   font-weight: 600;

@@ -29,8 +29,8 @@ export default function Home() {
         <TopSection />
         <About />
         <Experience />
-        {/* <About2 /> */}
         <Work />
+        <About2 />
     </>
   );
 }

@@ -18,6 +18,14 @@
     top: 20vh;
 }
 
+.projectTitle2 {
+    position: absolute;
+    left: 20vw;
+    font-size: 3rem;
+    font-weight: 600;
+    top: 20vh;
+}
+
 .projectDesc {
     position: absolute;
     left: 50%;
