@@ -25,14 +25,12 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       </Head>
-      <main className={styles.main}>
         <NavBar title="Mateusz Komar" />
         <TopSection />
         <About />
         <Experience />
-        {/* <About2 /> */}
         <Work />
-      </main>
+        <About2 />
     </>
   );
 }

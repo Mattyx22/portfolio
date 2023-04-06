@@ -58,7 +58,7 @@ const NavBar = ({ title }) => {
       >
         <Container fluid>
           <Navbar.Brand href="#home">
-            <Image src="/logo.png" width="60" height="45" alt="logo" />
+            <Image src="/logo.png" width="60" height="45" alt="logo" class={styles.logo} />
           </Navbar.Brand>
           <Navbar.Toggle
             className={styles.navbarToggler}
