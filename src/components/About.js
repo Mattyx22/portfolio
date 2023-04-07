@@ -46,7 +46,7 @@ const About = () => {
         ["0%", titleOffset, titleOffset, "-100%"]
     );
 
-    const yTitle = useTransform(scrollYProgress, [0.2, 0.4], ["0%", "-35%"]);
+    const yTitle = useTransform(scrollYProgress, [0.2, 0.3], ["0%", "-35%"]);
 
 
     const opacityDescription = useTransform(scrollYProgress, [0.35, 0.4, 0.45, 0.55], [0, 1, 1, 0]);
