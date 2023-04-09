@@ -1,7 +1,5 @@
 .height {
-  height: 300vh;
-  background: rgb(15,15,17);
-  background: linear-gradient(180deg, rgba(15,15,17,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 4%, rgba(0,0,0,1) 9%, rgba(62,28,100,1) 41%, rgba(62,28,100,1) 100%);
+  height: 100vh;
 }
 
 .paddingTop60 {

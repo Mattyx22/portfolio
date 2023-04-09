@@ -1,5 +1,5 @@
 .containerHeight {
-  height: 500vh;
+  height: 700vh;
 }
 
 .sectionTitle {
@@ -19,4 +19,49 @@
 
 .skills h4, .left50 {
   transform: translateX(-50%);
+}
+
+.cardsContainer {
+  display: flex;
+    width: 400vw;
+}
+
+.singleCard {
+  width: 30vw;
+    margin: 0 5vw;
+    background: rgba(49, 22, 84, 0.35);
+    margin: 1vw 8vw;
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    border: 1px solid rgb(39 26 58);
+    height: 20vh;
+}
+
+.cardTitle {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.skillsList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.skillsList li {
+  margin: 10px 10px;
+  font-weight: 600;
+}
+
+.cardBody {
+  color: white;
+}
+
+.titleContainer {
+  width: 100%;
 }

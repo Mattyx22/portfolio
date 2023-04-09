@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from '@/styles/About.module.css';
 import { useScroll, useTransform, motion } from 'framer-motion';
+import Image from 'next/image';
 
 const About = () => {
 
@@ -40,19 +41,15 @@ const About = () => {
     );
 
 
-    const xTitle = useTransform(
-        scrollYProgress,
-        [0.45, 0.55, 0.9, 1],
-        ["0%", titleOffset, titleOffset, "-100%"]
-    );
-
     const yTitle = useTransform(scrollYProgress, [0.2, 0.3], ["0%", "-35%"]);
 
 
-    const opacityDescription = useTransform(scrollYProgress, [0.35, 0.4, 0.45, 0.55], [0, 1, 1, 0]);
+    const opacityDescription = useTransform(scrollYProgress, [0.31, 0.33, 0.42, 0.55], [0, 1, 1, 0]);
 
 
-    const opacitySkills = useTransform(scrollYProgress, [0.60, 0.7, 0.9, 1], [0, 1, 1, 0])
+    const opacitySkills = useTransform(scrollYProgress, [0.54, 0.56, 0.9, 1], [0, 1, 1, 0])
+
+    const xSkills = useTransform(scrollYProgress, [0.56, 0.95], ["10%", "-100%"]);
 
     const position = useTransform(scrollYProgress, (pos) => {
         return pos === 1 ? "relative" : "sticky"
@@ -62,7 +59,7 @@ const About = () => {
     return (
         <div id="about">
             <Container className={styles.containerHeight} ref={targetRef}>
-                <motion.h2 className={`${styles.sectionTitle} d-flex justify-content-center align-items-center`} style={{ y: yTitle, x: xTitle, opacity: opacityTitle, scale: scaleTitle, position, top: "0vh", height: "100vh" }}>
+                <motion.h2 className={`${styles.sectionTitle} d-flex justify-content-center align-items-center`} style={{ y: yTitle, opacity: opacityTitle, scale: scaleTitle, position, top: "0vh", height: "100vh" }}>
                     About.
                 </motion.h2>
                 <motion.div className={`text ${styles.center}`} style={{ opacity: opacityDescription, position, top: "27vh" }}>
@@ -81,42 +78,106 @@ const About = () => {
                     </p>
                 </motion.div>
 
-                <motion.div className={`${styles.skills}`} style={{ opacity: opacitySkills, position, top: "27vh", left: "50%" }}>
-                    <h4 className="mb-3">Developing</h4>
-                    <div className={styles.left50}>
-                        <Row>
-                            <Col>
-                                <p>HTML 5</p>
-                                <p>CSS 3</p>
-                                <p>JavaScript</p>
-                                <p>React</p>
-                                <p>Express</p>
-                                <p>Next</p>
-                                <p>Node.js</p>
-                            </Col>
-                            <Col>
-                                <p>MySQL</p>
-                                <p>MongoDB</p>
-                                <p>Git</p>
-                                <p>NPM</p>
-                                <p>Flutter</p>
-                                <p>Wordpress</p>
-                                <p>Woocommerce</p>
-                            </Col>
-                        </Row>
-                    </div>
-                    <h4 className="mt-5 mb-3">Design</h4>
-                    <div className={styles.left50}>
-                        <Row>
-                            <Col>
-                                <p>Photoshop</p>
-                                <p>Figma</p>
-                            </Col>
-                            <Col>
-                                <p>Adobe XD</p>
-                            </Col>
-                        </Row>
-                    </div>
+
+
+                <motion.div className={styles.cardsContainer} style={{ position, top: "40vh", opacity: opacitySkills, x: xSkills }}>
+                    <Card className={styles.singleCard}>
+                        <Card.Body className={`d-flex align-items-center ${styles.cardBody}`}>
+
+                            <Row className={styles.titleContainer}>
+                                <Col sm="3" className="d-flex justify-content-center align-items-center">
+                                    <Image src="/skills/language.png" width="72" height="72" />
+                                </Col>
+                                <Col sm="9">
+                                    <p className={styles.cardTitle}>
+                                        Languages
+                                    </p>
+                                    <ul className={styles.skillsList}>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>Dart</li>
+                                        <li>Python</li>
+                                    </ul>
+                                </Col>
+
+                            </Row>
+
+                        </Card.Body>
+                    </Card>
+
+                    <Card className={styles.singleCard}>
+                        <Card.Body className={`d-flex align-items-center ${styles.cardBody}`}>
+
+                            <Row className={styles.titleContainer}>
+                                <Col sm="3" className="d-flex justify-content-center align-items-center">
+                                    <Image src="/skills/frameworks.png" width="72" height="72" />
+                                </Col>
+                                <Col sm="9">
+                                    <p className={styles.cardTitle}>
+                                        Frameworks & CMSs
+                                    </p>
+                                    <ul className={styles.skillsList}>
+                                        <li>React</li>
+                                        <li>Express</li>
+                                        <li>Next</li>
+                                        <li>Node.js</li>
+                                        <li>Wordpress</li>
+                                    </ul>
+                                </Col>
+
+                            </Row>
+
+                        </Card.Body>
+                    </Card>
+
+
+                    <Card className={styles.singleCard}>
+                        <Card.Body className={`d-flex align-items-center ${styles.cardBody}`}>
+
+                            <Row className={styles.titleContainer}>
+                                <Col sm="3" className="d-flex justify-content-center align-items-center">
+                                    <Image src="/skills/databases.png" width="72" height="72" />
+                                </Col>
+                                <Col sm="9">
+                                    <p className={styles.cardTitle}>
+                                        Databases
+                                    </p>
+                                    <ul className={styles.skillsList}>
+                                        <li>MySQL / MariaDB</li>
+                                        <li>MongoDB</li>
+                                    </ul>
+                                </Col>
+
+                            </Row>
+
+                        </Card.Body>
+                    </Card>
+
+
+                    <Card className={styles.singleCard}>
+                        <Card.Body className={`d-flex align-items-center ${styles.cardBody}`}>
+
+                            <Row className={styles.titleContainer}>
+                                <Col sm="3" className="d-flex justify-content-center align-items-center">
+                                    <Image src="/skills/design.png" width="72" height="72" />
+                                </Col>
+                                <Col sm="9">
+                                    <p className={styles.cardTitle}>
+                                        Design
+                                    </p>
+                                    <ul className={styles.skillsList}>
+                                        <li>Adobe Photoshop</li>
+                                        <li>Adobe XD</li>
+                                        <li>Figma</li>
+                                    </ul>
+                                </Col>
+
+                            </Row>
+
+                        </Card.Body>
+                    </Card>
+
                 </motion.div>
 
             </Container>
