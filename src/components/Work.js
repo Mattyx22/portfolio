@@ -95,8 +95,6 @@ const Work = () => {
             <motion.div className="d-flex justify-content-center" style={{position, top: "15%", x: xImage5, opacity: opacityImage5}}>
                 <Image src="/work/bosch.png" width="1100" height="825"></Image>
             </motion.div>
-
-
         </div>
     )
 }

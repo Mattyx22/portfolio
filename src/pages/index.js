@@ -1,11 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
 import TopSection from "@/components/TopSection";
 import About from "@/components/About";
-import About2 from "@/components/About2";
 import Experience from "@/components/Experience";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
@@ -31,7 +28,6 @@ export default function Home() {
         <About />
         <Experience />
         <Work />
-        {/* <About2 /> */}
         <Contact/>
     </>
   );

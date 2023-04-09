@@ -90,7 +90,7 @@ body {
 }
 
 .accordion-button {
-  background-color: #3E1C64;
+  background-color: black;
 }
 
 .accordion-button .collapsed {
@@ -98,7 +98,7 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #3E1C64;
+  background-color: black;
   color: unset;
   box-shadow: unset;
 }
@@ -108,5 +108,5 @@ body {
 }
 
 .accordion-item {
-  background-color: #351b52;
+  background-color: black;
 }

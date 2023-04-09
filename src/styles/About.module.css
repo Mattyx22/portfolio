@@ -12,3 +12,11 @@
 .center {
   text-align: center;
 }
+
+.skills {
+  width: 25vw;
+}
+
+.skills h4, .left50 {
+  transform: translateX(-50%);
+}

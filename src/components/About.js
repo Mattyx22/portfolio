@@ -83,7 +83,7 @@ const About = () => {
 
                 <motion.div className={`${styles.skills}`} style={{ opacity: opacitySkills, position, top: "27vh", left: "50%" }}>
                     <h4 className="mb-3">Developing</h4>
-                    <div>
+                    <div className={styles.left50}>
                         <Row>
                             <Col>
                                 <p>HTML 5</p>
@@ -106,7 +106,7 @@ const About = () => {
                         </Row>
                     </div>
                     <h4 className="mt-5 mb-3">Design</h4>
-                    <div>
+                    <div className={styles.left50}>
                         <Row>
                             <Col>
                                 <p>Photoshop</p>
