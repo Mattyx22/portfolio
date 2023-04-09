@@ -179,7 +179,7 @@ const About = () => {
                     </Card>
 
                 </motion.div>
-
+        
             </Container>
         </div>
 

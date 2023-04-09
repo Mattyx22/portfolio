@@ -1,16 +1,16 @@
 .height {
-    height: 1000vh;
-    background-color: black;
+  height: 500vh;
+  background-color: black;
 }
 
 .sectionTitle {
-    text-align: center;
-    font-size: 3.1875rem;
-    font-weight: 600;
-    color: white;
+  text-align: center;
+  font-size: 3.1875rem;
+  font-weight: 600;
+  color: white;
 }
 
-.projectTitle {
+/* .projectTitle {
     position: absolute;
     right: 20vw;
     font-size: 3rem;
@@ -39,4 +39,16 @@
 
 .imgContainer {
     z-index: 99;
+} */
+
+.video {
+  width: 37%;
+  height: 100%;
+  border-radius: 30px;
+  display: block;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0);
+  object-position: 50% 50%;
+  z-index: 99;
+  position: relative;
 }
