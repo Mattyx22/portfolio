@@ -1,54 +1,60 @@
-.height {
-  height: 100vh;
-}
-
-.paddingTop60 {
-  padding-top: 60vh;
+.animatedtext {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
+  background-color: black;
 }
 
-.contactContainer a {
-  animation: move 15s linear infinite;
-  -webkit-animation: move 15s linear infinite;
-  animation-play-state: paused;
+.contactContainer {
+  height: 100vh;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textContainer {
+  font-family: 'Mark pro', sans-serif;
+  text-align: center;
+  z-index: 99;
+}
+
+.textContainer p {
+  font-size: 4rem;
+    font-weight: 600;
+}
+
+.textContainer a {
+  color: gray;
   text-decoration: none;
-  background-color: transparent;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  color: rgb(41 18 67);
-  font-size: 5rem;
+  text-align: center;
+  font-weight: 500;
 }
 
-.contactContainer a:hover {
-  background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg");
-  animation-play-state: running;
-  padding-bottom: 5px;
-  
-  background-repeat: repeat;
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-size: auto auto;
-  background-repeat: repeat-x;
-  background-size: 15px 5px; 
-  background-position: 2px 19px;
-  -webkit-text-decoration-skip: objects;
+.contactFooter svg{
+  height: 24px;
+  width: 24px;
+  margin: 0 25px;
 }
 
-@-webkit-keyframes move {
-  from {
-      background-position: 2px 19px;
-    }
-    to {
-      background-position: 500px 19px;
-    }
-  }
-  
-  @keyframes move {
-  from {
-      background-position: 2px 19px;
-    }
-    to {
-      background-position: 500px 19px;
-    }
-  }
+.contactFooter span {
+  margin: 0 25px;
+}
+
+.contactFooter a {
+  color: white;
+  text-decoration: none;
+}
+
+.contactFooter {
+  position: absolute;
+    height: 100vh;
+}
+
+.footerPosition {
+  position: relative;
+  top: 90vh;
+  display: flex;
+  align-items: center;
+}
