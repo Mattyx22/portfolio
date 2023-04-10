@@ -2,6 +2,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import styles from '@/styles/Work.module.css';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import Image from 'next/image';
+import Marquee from './partials/Marquee';
+import { Row, Col } from 'react-bootstrap';
 
 const animationOrder = {
     initialTitle: 0.1,
@@ -44,57 +46,38 @@ const Work = () => {
         return pos === 1 ? "relative" : "sticky"
     });
 
-    const titleOffset = isMobile ? "-5%" : "-30%";
-
-    const xTitle = useTransform(
-        scrollYProgress,
-        [
-            animationOrder.initialTitle,
-            animationOrder.titleMoveLeft,
-        ],
-        ["0%", titleOffset]
-    );
-
-
-    const xImage1 = useTransform(scrollYProgress, [0.2, 0.25], ["-30%", "0%"]);
-    const opacityImage1 = useTransform(scrollYProgress, [0.2, 0.25, 0.3, 0.5], [0, 1, 1, 0]);
-
-    
-    const opacityImage2 = useTransform(scrollYProgress, [0.3, 0.35, 0.4, 0.6], [0, 1, 1, 0]);
-
-   
-    const opacityImage3 = useTransform(scrollYProgress, [0.4, 0.45, 0.50, 0.7], [0, 1, 1, 0]);
-
-   
-    const opacityImage4 = useTransform(scrollYProgress, [0.5, 0.55, 0.6, 0.7], [0, 1, 1, 0]);
-
-    const xImage5 = useTransform(scrollYProgress, [0.85, 0.95], ["0%", "30%"]);
-    const opacityImage5 = useTransform(scrollYProgress, [0.6, 0.65, 0.7, 0.9], [0, 1, 1, 0]);
-
     return (
-        <div className={styles.height} ref={targetRef}>
-            <motion.h2 className={styles.sectionTitle} style={{ position, x: xTitle, position, top: "10vh" }}>Work.</motion.h2>
-
-
-            <motion.div className="d-flex justify-content-center" style={{position, x: xImage1, top: "15%", opacity: opacityImage1}}>
-                <Image src="/work/loca.png" width="1100" height="825"></Image>
+        <div className={styles.height} ref={targetRef} id="work">
+            <motion.div style={{ position, top: "35vh" }}>
+                <h2 className={`${styles.sectionTitle} d-flex justify-content-center align-items-center`}>
+                    My Great
+                </h2>
+                <Marquee>WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK WORK</Marquee>
             </motion.div>
 
-            <motion.div className="d-flex justify-content-center" style={{position, top: "15%", opacity: opacityImage2}}>
-                <Image src="/work/ra.png" width="1100" height="825"></Image>
-            </motion.div>
+            <Row>
+                <div style={{ position: "relative", left: "10vw", marginBottom: "20vh" }}>
+                    <video src="/work/cw.mp4" loop autoPlay muted className={styles.video}></video>
+                </div>
 
-            <motion.div className="d-flex justify-content-center" style={{position, top: "15%", opacity: opacityImage3}}>
-                <Image src="/work/cw.png" width="1100" height="825"></Image>
-            </motion.div>
+                <div style={{ position: "relative", left: "50vw", marginBottom: "20vh" }}>
+                    <video src="/work/kaldera.mp4" loop autoPlay muted className={styles.video}></video>
+                </div>
 
-            <motion.div className="d-flex justify-content-center" style={{position, top: "15%", opacity: opacityImage4}}>
-                <Image src="/work/kaldera.png" width="1100" height="825"></Image>
-            </motion.div>
+                <div style={{ position: "relative", left: "10vw", marginBottom: "20vh" }}>
+                    <video src="/work/ra.mp4" loop autoPlay muted className={styles.video}></video>
+                </div>
 
-            <motion.div className="d-flex justify-content-center" style={{position, top: "15%", x: xImage5, opacity: opacityImage5}}>
-                <Image src="/work/bosch.png" width="1100" height="825"></Image>
-            </motion.div>
+                <div style={{ position: "relative", left: "50vw", marginBottom: "20vh" }}>
+                    <video src="/work/bosch.mp4" loop autoPlay muted className={styles.video}></video>
+                </div>
+
+                <div style={{ position: "relative", left: "10vw", marginBottom: "20vh" }}>
+                    <video src="/work/loca.mp4" loop autoPlay muted className={styles.video}></video>
+                </div>
+            </Row>
+
+
         </div>
     )
 }
