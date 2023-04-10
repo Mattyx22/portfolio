@@ -73,7 +73,7 @@ const TopSection = () => {
                     GitHub
                   </a>
                   <span> / </span>
-                  <a href="#" className={styles.singleLink}>
+                  <a href="/CV_Mateusz_Komar_PL.pdf" className={styles.singleLink}>
                     CV
                   </a>
                   <span> / </span>

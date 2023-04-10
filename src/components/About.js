@@ -93,7 +93,7 @@ const About = () => {
                                 <Col sm="12" md="3" className="d-flex justify-content-center align-items-center">
                                     <Image src="/skills/frameworks.png" width="72" height="72" alt="Frameworks and CMSs" />
                                 </Col>
-                                <Col sm="12" md="3">
+                                <Col sm="12" md="9">
                                     <p className={styles.cardTitle}>
                                         Frameworks & CMSs
                                     </p>
@@ -119,7 +119,7 @@ const About = () => {
                                 <Col sm="12" md="3" className="d-flex justify-content-center align-items-center">
                                     <Image src="/skills/databases.png" width="72" height="72" alt="Databases" />
                                 </Col>
-                                <Col sm="12" md="3">
+                                <Col sm="12" md="9">
                                     <p className={styles.cardTitle}>
                                         Databases
                                     </p>
@@ -142,14 +142,15 @@ const About = () => {
                                 <Col sm="12" md="3" className="d-flex justify-content-center align-items-center">
                                     <Image src="/skills/design.png" width="72" height="72" alt="Design" />
                                 </Col>
-                                <Col sm="12" md="3">
+                                <Col sm="12" md="9">
                                     <p className={styles.cardTitle}>
-                                        Design
+                                        Tools
                                     </p>
                                     <ul className={styles.skillsList}>
                                         <li>Adobe Photoshop</li>
                                         <li>Adobe XD</li>
                                         <li>Figma</li>
+                                        <li>Git</li>
                                     </ul>
                                 </Col>
 

@@ -17,14 +17,14 @@ export default function handler(req, res) {
       company: 'Bosch Car Service / France Auto Service',
       dates: 'October 2019 - Present',
       description: [
-        'Internal use React apps',
-        'Websites administration, web design, and code implementation',
+        'React / Express applications for internal use',
+        'E-commerce store developement',
         'Wordpress and Woocommerce',
         'Internet marketing',
-        'Graphic design (Photoshop)',
-        'SEO, SEM (Google Ads, Facebook Ads)',
-        'Online sales (Allegro, E-bay)',
-        'E-mail marketing'
+        'Graphic design in Adobe Photoshop',
+        'Providing IT service',
+        'SEO / SEM',
+        'Google and Facebook Ads campaigns'
       ],
     },
     {
