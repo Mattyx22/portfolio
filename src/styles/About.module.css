@@ -62,8 +62,16 @@
   color: white;
 }
 
-.titleContainer {
-  width: 100%;
+@media (max-width:572px){
+  .skillsList {
+    padding-left: 0;
+  }
+}
+
+@media(min-width: 573px){
+  .titleContainer {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1090px) and (max-width: 1822px) {

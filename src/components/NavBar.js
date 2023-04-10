@@ -16,7 +16,10 @@ const NavBar = ({ title }) => {
 
     const controlNavbar = () => {
       if (typeof window !== 'undefined') {
-        if (window.scrollY > lastScrollY) {
+        if(window.scrollY <= 50){
+          setShow(true);
+        }
+        else if (window.scrollY > lastScrollY) {
           setShow(false);
         } else {
           setShow(true);

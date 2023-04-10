@@ -65,10 +65,10 @@ const About = () => {
                         <Card.Body className={`d-flex align-items-center ${styles.cardBody}`}>
 
                             <Row className={styles.titleContainer}>
-                                <Col sm="3" className="d-flex justify-content-center align-items-center">
+                                <Col sm="12" md="3" className="d-flex justify-content-center align-items-center">
                                     <Image src="/skills/language.png" width="72" height="72" alt="Languages" />
                                 </Col>
-                                <Col sm="9">
+                                <Col sm="12" md="9">
                                     <p className={styles.cardTitle}>
                                         Languages
                                     </p>
@@ -90,10 +90,10 @@ const About = () => {
                         <Card.Body className={`d-flex align-items-center ${styles.cardBody}`}>
 
                             <Row className={styles.titleContainer}>
-                                <Col sm="3" className="d-flex justify-content-center align-items-center">
+                                <Col sm="12" md="3" className="d-flex justify-content-center align-items-center">
                                     <Image src="/skills/frameworks.png" width="72" height="72" alt="Frameworks and CMSs" />
                                 </Col>
-                                <Col sm="9">
+                                <Col sm="12" md="3">
                                     <p className={styles.cardTitle}>
                                         Frameworks & CMSs
                                     </p>
@@ -116,10 +116,10 @@ const About = () => {
                         <Card.Body className={`d-flex align-items-center ${styles.cardBody}`}>
 
                             <Row className={styles.titleContainer}>
-                                <Col sm="3" className="d-flex justify-content-center align-items-center">
+                                <Col sm="12" md="3" className="d-flex justify-content-center align-items-center">
                                     <Image src="/skills/databases.png" width="72" height="72" alt="Databases" />
                                 </Col>
-                                <Col sm="9">
+                                <Col sm="12" md="3">
                                     <p className={styles.cardTitle}>
                                         Databases
                                     </p>
@@ -139,10 +139,10 @@ const About = () => {
                         <Card.Body className={`d-flex align-items-center ${styles.cardBody}`}>
 
                             <Row className={styles.titleContainer}>
-                                <Col sm="3" className="d-flex justify-content-center align-items-center">
+                                <Col sm="12" md="3" className="d-flex justify-content-center align-items-center">
                                     <Image src="/skills/design.png" width="72" height="72" alt="Design" />
                                 </Col>
-                                <Col sm="9">
+                                <Col sm="12" md="3">
                                     <p className={styles.cardTitle}>
                                         Design
                                     </p>
