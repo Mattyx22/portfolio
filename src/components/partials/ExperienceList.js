@@ -20,7 +20,7 @@ const ExperienceList = () => {
                         <>
                             <Accordion.Item eventKey={index} key={`c-${index}`}>
                                 <Accordion.Header style={styles.accordionHeader}>
-                                <span className={styles.company}>{item.company}</span>
+                                    <span className={styles.company}>{item.company}</span>
                                     <span className={styles.title}>- {item.title}</span>
                                     <span className={styles.dates}>{item.dates}</span>
                                 </Accordion.Header>

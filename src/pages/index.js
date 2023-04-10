@@ -24,12 +24,12 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
       </Head>
-        <NavBar title="Mateusz Komar" />
-        <TopSection />
-        <About />
-        <Experience />
-        <Work />
-        <Contact/>
+      <NavBar title="Mateusz Komar" />
+      <TopSection />
+      <About />
+      <Experience />
+      <Work />
+      <Contact />
     </>
   );
 }

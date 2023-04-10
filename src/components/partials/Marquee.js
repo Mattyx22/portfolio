@@ -17,7 +17,7 @@ const marqueeVariants = {
   },
 };
 
-const Marquee = ({children}) => {
+const Marquee = ({ children }) => {
   return (
     <div>
       <div className={styles.marquee}>

@@ -17,25 +17,26 @@
   width: 25vw;
 }
 
-.skills h4, .left50 {
+.skills h4,
+.left50 {
   transform: translateX(-50%);
 }
 
 .cardsContainer {
   display: flex;
-    width: 400vw;
+  width: 400vw;
 }
 
 .singleCard {
   width: 30vw;
-    margin: 0 5vw;
-    background: rgba(49, 22, 84, 0.35);
-    margin: 1vw 8vw;
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
-    border-radius: 10px;
-    border: 1px solid rgb(39 26 58);
-    height: 20vh;
+  margin: 0 5vw;
+  background: rgba(49, 22, 84, 0.35);
+  margin: 1vw 8vw;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgb(39 26 58);
+  height: 20vh;
 }
 
 .cardTitle {
@@ -44,7 +45,6 @@
   font-weight: 600;
   text-align: center;
 }
-
 
 .skillsList {
   list-style: none;
@@ -64,4 +64,24 @@
 
 .titleContainer {
   width: 100%;
+}
+
+@media (min-width: 1090px) and (max-width: 1822px) {
+  .cardsContainer {
+    width: 800vw;
+  }
+
+  .singleCard {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1089px) {
+  .cardsContainer {
+    width: 800vw;
+  }
+
+  .singleCard {
+    width: 100vw;
+  }
 }

@@ -59,7 +59,7 @@ const Experience = () => {
     return pos === 1 ? "relative" : "sticky"
   });
 
-  const titleOffset = isMobile ? "-5%" : "-30%";
+  const titleOffset = isMobile ? "0%" : "-30%";
   const xTitle = useTransform(scrollYProgress, [0.1, 0.3, 0.7, 1], ["0%", titleOffset, titleOffset, "-100%"]);
 
   const xExp = useTransform(scrollYProgress, [0.2, 0.5, 0.7, 1], ["100%", "0%", "0%", "-100%"]);
@@ -84,7 +84,7 @@ const Experience = () => {
       </div>
       <div className={styles.height}>
         <motion.h2 className={styles.sectionTitle} style={{ x: xTitle, position, top: "10vh" }}>Experience.</motion.h2>
-        <motion.div style={{x: xExp, position, opacity: opacityX, color: "white", top: "30vh", height: "100vh"}}>
+        <motion.div className={styles.experienceList} style={{ x: xExp, position, opacity: opacityX }}>
           <ExperienceList />
         </motion.div>
       </div>
