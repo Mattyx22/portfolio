@@ -86,7 +86,7 @@ const About = () => {
 
                             <Row className={styles.titleContainer}>
                                 <Col sm="3" className="d-flex justify-content-center align-items-center">
-                                    <Image src="/skills/language.png" width="72" height="72" />
+                                    <Image src="/skills/language.png" width="72" height="72" alt="Languages" />
                                 </Col>
                                 <Col sm="9">
                                     <p className={styles.cardTitle}>
@@ -111,7 +111,7 @@ const About = () => {
 
                             <Row className={styles.titleContainer}>
                                 <Col sm="3" className="d-flex justify-content-center align-items-center">
-                                    <Image src="/skills/frameworks.png" width="72" height="72" />
+                                    <Image src="/skills/frameworks.png" width="72" height="72" alt="Frameworks and CMSs" />
                                 </Col>
                                 <Col sm="9">
                                     <p className={styles.cardTitle}>
@@ -137,7 +137,7 @@ const About = () => {
 
                             <Row className={styles.titleContainer}>
                                 <Col sm="3" className="d-flex justify-content-center align-items-center">
-                                    <Image src="/skills/databases.png" width="72" height="72" />
+                                    <Image src="/skills/databases.png" width="72" height="72" alt="Databases" />
                                 </Col>
                                 <Col sm="9">
                                     <p className={styles.cardTitle}>
@@ -160,7 +160,7 @@ const About = () => {
 
                             <Row className={styles.titleContainer}>
                                 <Col sm="3" className="d-flex justify-content-center align-items-center">
-                                    <Image src="/skills/design.png" width="72" height="72" />
+                                    <Image src="/skills/design.png" width="72" height="72" alt="Design" />
                                 </Col>
                                 <Col sm="9">
                                     <p className={styles.cardTitle}>

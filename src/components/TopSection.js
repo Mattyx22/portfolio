@@ -54,7 +54,7 @@ const TopSection = () => {
             <Col xs={12} md={12}>
               <Row className={styles.textRow}>
                 <motion.div style={{scale}}>
-                  <h1 className={styles.title}>I develop <div class={styles.animationContainer}>
+                  <h1 className={styles.title}>I develop <div className={styles.animationContainer}>
                     <p style={{ backgroundImage: `url(${bg.src})` }} className={styles.animationContainer}>ideas</p>
                   </div> for the web.</h1>
                   <p className={styles.description}>
