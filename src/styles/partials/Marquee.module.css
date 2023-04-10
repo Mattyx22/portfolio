@@ -1,22 +1,22 @@
 .marquee {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-  }
-  
-  .track {
-    position: absolute;
-    white-space: nowrap;
-  }
-  
-  .track > h2 {
-    margin: 20px 0;
-    font-size: 8rem;
-    font-family: Antonio;
-    -webkit-text-fill-color: #3E1C64;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #2b1149;
-    text-transform: uppercase;
-  }
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+}
+
+.track > h2 {
+  margin: 20px 0;
+  font-size: 8rem;
+  font-family: Antonio;
+  -webkit-text-fill-color: #3e1c64;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #2b1149;
+  text-transform: uppercase;
+}

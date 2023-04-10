@@ -15,14 +15,14 @@
 }
 
 .textContainer {
-  font-family: 'Mark pro', sans-serif;
+  font-family: "Mark pro", sans-serif;
   text-align: center;
   z-index: 99;
 }
 
 .textContainer p {
   font-size: 4rem;
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .textContainer a {
@@ -32,7 +32,7 @@
   font-weight: 500;
 }
 
-.contactFooter svg{
+.contactFooter svg {
   height: 24px;
   width: 24px;
   margin: 0 25px;
@@ -49,7 +49,7 @@
 
 .contactFooter {
   position: absolute;
-    height: 100vh;
+  height: 100vh;
 }
 
 .footerPosition {

@@ -1,30 +1,10 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef } from 'react'
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import styles from '@/styles/About.module.css';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Image from 'next/image';
 
 const About = () => {
-
-    const [windowSize, setWindowSize] = useState(0)
-
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-
-        setWindowSize(window.innerWidth)
-
-        if (windowSize > 992) {
-            setIsMobile(false);
-        } else {
-            setIsMobile(true);
-        }
-
-        console.log(windowSize)
-    }, [windowSize])
-
-
-    const titleOffset = isMobile ? "-5%" : "-43%";
 
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -47,9 +27,9 @@ const About = () => {
     const opacityDescription = useTransform(scrollYProgress, [0.31, 0.33, 0.42, 0.55], [0, 1, 1, 0]);
 
 
-    const opacitySkills = useTransform(scrollYProgress, [0.54, 0.56, 0.9, 1], [0, 1, 1, 0])
+    const opacitySkills = useTransform(scrollYProgress, [0.54, 0.56, 0.93, 1], [0, 1, 1, 0])
 
-    const xSkills = useTransform(scrollYProgress, [0.56, 0.95], ["10%", "-100%"]);
+    const xSkills = useTransform(scrollYProgress, [0.56, 0.98], ["10%", "-100%"]);
 
     const position = useTransform(scrollYProgress, (pos) => {
         return pos === 1 ? "relative" : "sticky"
@@ -179,7 +159,7 @@ const About = () => {
                     </Card>
 
                 </motion.div>
-        
+
             </Container>
         </div>
 

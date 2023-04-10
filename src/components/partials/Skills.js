@@ -2,8 +2,9 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Skills = ({ children }) => {
+
   const ref = useRef(null);
-  //   const isInView = useInView(ref, { once: false });
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["end start", "start end"],
