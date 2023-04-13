@@ -40,10 +40,9 @@
 }
 
 .cardTitle {
-  margin-bottom: 0;
+  margin-bottom: 2vh;
   font-size: 1.4rem;
   font-weight: 600;
-  text-align: center;
 }
 
 .skillsList {

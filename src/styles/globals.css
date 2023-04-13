@@ -123,6 +123,11 @@ body {
 
 .accordion-item {
   background-color: black;
+  border: 0;
+}
+
+.accordion-body p {
+  padding-left: 20px;
 }
 
 .btn-close {
