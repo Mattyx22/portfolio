@@ -12,24 +12,13 @@ const About = () => {
         offset: ["start end", "end start"]
     })
 
-    const scaleTitle = useTransform(scrollYProgress, [0.05, 0.15, 0.2, 0.25], [0, 1.5, 1.5, 1]);
-
     const opacityTitle = useTransform(
         scrollYProgress,
-        [0.8, 0.9],
-        ["100%", "0%"]
+        [0.1, 0.2],
+        [0, 1]
     );
 
-
-    const yTitle = useTransform(scrollYProgress, [0.2, 0.3], ["0%", "-35%"]);
-
-
-    const opacityDescription = useTransform(scrollYProgress, [0.31, 0.33, 0.42, 0.55], [0, 1, 1, 0]);
-
-
-    const opacitySkills = useTransform(scrollYProgress, [0.54, 0.56, 0.93, 1], [0, 1, 1, 0])
-
-    const xSkills = useTransform(scrollYProgress, [0.56, 0.98], ["10%", "-100%"]);
+    const opacityDescription = useTransform(scrollYProgress, [0.2, 0.45], [0, 1]);
 
     const position = useTransform(scrollYProgress, (pos) => {
         return pos === 1 ? "relative" : "sticky"
@@ -39,87 +28,126 @@ const About = () => {
     return (
         <div id="about" className={styles.containerHeight} ref={targetRef}>
             <Container>
-                <motion.h2 className={`${styles.sectionTitle} d-flex justify-content-center align-items-center`} style={{ y: yTitle, opacity: opacityTitle, scale: scaleTitle, position, top: "0vh", height: "100vh" }}>
+                <motion.h2 className={`${styles.sectionTitle} d-flex justify-content-center align-items-center`} style={{ opacity: opacityTitle, height: "10vh" }}>
                     About.
                 </motion.h2>
 
+                <motion.div style={{ position, top: "0vh", opacity: opacityDescription }}>
+                    <Row>
+                        <Col xs="12" md="6">
+                            <Row className={styles.introduction}>
+                                <p className={styles.cardTitle}>
+                                    Hello!
+                                </p>
+                                <p> I'm a webdeveloper proficient in various essential web development
+                                    technologies such as HTML, CSS, JavaScript, WordPress, and
+                                    React, and I am always eager to learn new things and explore
+                                    new possibilities. Recently, I have embarked on a new
+                                    learning journey, and I am currently expanding my skills by
+                                    delving into the world of Flutter.</p>
+                            </Row>
+                            <Row>
+                                <p className={styles.cardTitle}>
+                                    Education
+                                </p>
 
-                <Row>
-                    <p className={styles.cardTitle}>
-                        Languages
-                    </p>
-                    <Col xs="2">
+                                <div>
+                                    <p className={styles.schoolName}>Wroclaw Business University of Applied Sciences <span className={styles.schoolYears}> / 2019-2023</span></p>
 
-                        <Image src="/skills/html5.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/css.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/js.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/python.svg" width={64} height={64} />
-                    </Col>
-                </Row>
+                                    <p>Degree: BSc. of Computer Science</p>
+                                    <p>Specialization: Internet Engineering</p>
+                                </div>
 
-                <Row>
-                    <p className={styles.cardTitle}>
-                        Frameworks and CMSs
-                    </p>
-                    <Col xs="2">
+                                <div className={styles.education}>
+                                    <p className={styles.schoolName}>Zespół Szkół Budowlano-Elektrycznych w Świdnicy <span className={styles.schoolYears}> / 2015-2019</span></p>
+                                    <p>Degree: IT Technician</p>
+                                </div>
+                            </Row>
+                        </Col>
+                        <Col xs="12" md="6" className={styles.rightPanel}>
+                            <Row className={styles.skillsContainers}>
+                                <p className={styles.cardTitle}>
+                                    Languages
+                                </p>
+                                <Col xs="2">
 
-                        <Image src="/skills/reactjs.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/nextjs.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/nodejs.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/express.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/wordpress.svg" width={64} height={64} />
-                    </Col>
-                </Row>
+                                    <Image src="/skills/html5.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/css.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/js.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/python.svg" width={64} height={64} />
+                                </Col>
+                            </Row>
 
-                <Row>
-                    <p className={styles.cardTitle}>
-                        Databases
-                    </p>
-                    <Col xs="2">
+                            <Row className={styles.skillsContainers}>
+                                <p className={styles.cardTitle}>
+                                    Frameworks and CMSs
+                                </p>
+                                <Col xs="2">
 
-                        <Image src="/skills/mysql.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/mongodb.svg" width={64} height={64} />
-                    </Col>
-                </Row>
+                                    <Image src="/skills/reactjs.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/nextjs.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/nodejs.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/express.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/wordpress.svg" width={64} height={64} />
+                                </Col>
+                            </Row>
 
-                <Row>
-                    <p className={styles.cardTitle}>
-                        Tools
-                    </p>
-                    <Col xs="2">
+                            <Row className={styles.skillsContainers}>
+                                <p className={styles.cardTitle}>
+                                    Databases
+                                </p>
+                                <Col xs="2">
 
-                        <Image src="/skills/github.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/insomnia.svg" width={64} height={64} />
-                    </Col>
+                                    <Image src="/skills/mysql.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/mongodb.svg" width={64} height={64} />
+                                </Col>
+                            </Row>
 
-                    <Col xs="2">
-                        <Image src="/skills/ps.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/figma.svg" width={64} height={64} />
-                    </Col>
-                    <Col xs="2">
-                        <Image src="/skills/xd.svg" width={64} height={64} />
-                    </Col>
-                </Row>
+                            <Row className={styles.skillsContainers}>
+                                <p className={styles.cardTitle}>
+                                    Tools
+                                </p>
+                                <Col xs="2">
+
+                                    <Image src="/skills/github.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/insomnia.svg" width={64} height={64} />
+                                </Col>
+
+                                <Col xs="2">
+                                    <Image src="/skills/ps.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/figma.svg" width={64} height={64} />
+                                </Col>
+                                <Col xs="2">
+                                    <Image src="/skills/xd.svg" width={64} height={64} />
+                                </Col>
+                            </Row>
+
+                        </Col>
+                    </Row>
+
+                </motion.div>
+
+
 
 
 

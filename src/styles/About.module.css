@@ -1,6 +1,7 @@
 .containerHeight {
-  height: 700vh;
+  min-height: 100vh;
 }
+
 
 .sectionTitle {
   text-align: center;
@@ -90,5 +91,50 @@
 
   .singleCard {
     width: 100vw;
+  }
+}
+
+.introduction {
+  margin-bottom: 5vh;
+  padding-right: 2vw;
+  padding-bottom: 2.5vh;
+  border-bottom: 1px solid #5a5a5a;
+}
+
+.introduction p {
+  text-align: justify;
+  
+}
+
+.education {
+  margin: 4vh 0;
+}
+
+.skillsContainers p {
+  margin-top: 4vh;
+}
+
+.rightPanel {
+  border-left: 1px solid #5a5a5a;
+  padding-left: 2vw;
+}
+
+.schoolName {
+  font-weight: 600;
+}
+
+.schoolYears {
+  color: whitesmoke;
+  font-size: 0.8rem;
+}
+
+@media(max-width: 577px){
+  .containerHeight {
+    padding: 2vw;
+  }
+
+  .rightPanel {
+    border: 0;
+    padding-left: 2vw;
   }
 }
