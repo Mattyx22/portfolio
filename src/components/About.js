@@ -39,7 +39,7 @@ const About = () => {
                                 <p className={styles.cardTitle}>
                                     Hello!
                                 </p>
-                                <p> I'm a webdeveloper proficient in various essential web development
+                                <p> I&apos;m a webdeveloper proficient in various essential web development
                                     technologies such as HTML, CSS, JavaScript, WordPress, and
                                     React, and I am always eager to learn new things and explore
                                     new possibilities. Recently, I have embarked on a new
@@ -69,18 +69,22 @@ const About = () => {
                                 <p className={styles.cardTitle}>
                                     Languages
                                 </p>
-                                <Col xs="2">
+                                <Col xs="2" className={styles.singleSkill}>
 
-                                    <Image src="/skills/html5.svg" width={64} height={64} />
+                                    <Image src="/skills/html5.svg" width={64} height={64} alt="html5" />
+                                    <p className={styles.skillTitle}>HTML5</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/css.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/css.svg" width={64} height={64} alt="css3" />
+                                    <p className={styles.skillTitle}>CSS3</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/js.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/js.svg" width={64} height={64} alt="javascript" />
+                                    <p className={styles.skillTitle}>JavaScript</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/python.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/python.svg" width={64} height={64} alt="python" />
+                                    <p className={styles.skillTitle}>Python</p>
                                 </Col>
                             </Row>
 
@@ -88,21 +92,25 @@ const About = () => {
                                 <p className={styles.cardTitle}>
                                     Frameworks and CMSs
                                 </p>
-                                <Col xs="2">
-
-                                    <Image src="/skills/reactjs.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/reactjs.svg" width={64} height={64} alt="react" />
+                                    <p className={styles.skillTitle}>React</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/nextjs.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/nextjs.svg" width={64} height={64} alt="nextjs" />
+                                    <p className={styles.skillTitle}>Next.js</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/nodejs.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/nodejs.svg" width={64} height={64} alt="nodejs" />
+                                    <p className={styles.skillTitle}>Node.js</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/express.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/express.svg" width={64} height={64} alt="express" />
+                                    <p className={styles.skillTitle}>Express</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/wordpress.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/wordpress.svg" width={64} height={64} alt="wordpress" />
+                                    <p className={styles.skillTitle}>Wordpress</p>
                                 </Col>
                             </Row>
 
@@ -110,12 +118,14 @@ const About = () => {
                                 <p className={styles.cardTitle}>
                                     Databases
                                 </p>
-                                <Col xs="2">
+                                <Col xs="2" className={styles.singleSkill}>
 
-                                    <Image src="/skills/mysql.svg" width={64} height={64} />
+                                    <Image src="/skills/mysql.svg" width={64} height={64} alt="mysql" />
+                                    <p className={styles.skillTitle}>MySQL</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/mongodb.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/mongodb.svg" width={64} height={64} alt="mongodb" />
+                                    <p className={styles.skillTitle}>MongoDB</p>
                                 </Col>
                             </Row>
 
@@ -123,22 +133,27 @@ const About = () => {
                                 <p className={styles.cardTitle}>
                                     Tools
                                 </p>
-                                <Col xs="2">
+                                <Col xs="2" className={styles.singleSkill}>
 
-                                    <Image src="/skills/github.svg" width={64} height={64} />
+                                    <Image src="/skills/github.svg" width={64} height={64} alt="github" />
+                                    <p className={styles.skillTitle}>Git</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/insomnia.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/insomnia.svg" width={64} height={64} alt="insomnia" />
+                                    <p className={styles.skillTitle}>Insomnia</p>
                                 </Col>
 
-                                <Col xs="2">
-                                    <Image src="/skills/ps.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/ps.svg" width={64} height={64} alt="photoshop" />
+                                    <p className={styles.skillTitle}>Photoshop</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/figma.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/figma.svg" width={64} height={64} alt="figma" />
+                                    <p className={styles.skillTitle}>Figma</p>
                                 </Col>
-                                <Col xs="2">
-                                    <Image src="/skills/xd.svg" width={64} height={64} />
+                                <Col xs="2" className={styles.singleSkill}>
+                                    <Image src="/skills/xd.svg" width={64} height={64} alt="adobe xd" />
+                                    <p className={styles.skillTitle}>Adobe XD</p>
                                 </Col>
                             </Row>
 

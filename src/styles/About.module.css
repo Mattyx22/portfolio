@@ -23,22 +23,6 @@
   transform: translateX(-50%);
 }
 
-.cardsContainer {
-  display: flex;
-  width: 400vw;
-}
-
-.singleCard {
-  width: 30vw;
-  margin: 0 5vw;
-  background: rgba(49, 22, 84, 0.35);
-  margin: 1vw 8vw;
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
-  border-radius: 10px;
-  border: 1px solid rgb(39 26 58);
-  height: 20vh;
-}
 
 .cardTitle {
   margin-bottom: 2vh;
@@ -62,13 +46,13 @@
   color: white;
 }
 
-@media (max-width:572px){
+@media (max-width:572px) {
   .skillsList {
     padding-left: 0;
   }
 }
 
-@media(min-width: 573px){
+@media(min-width: 573px) {
   .titleContainer {
     width: 100%;
   }
@@ -103,14 +87,14 @@
 
 .introduction p {
   text-align: justify;
-  
+
 }
 
 .education {
   margin: 4vh 0;
 }
 
-.skillsContainers p {
+.cardTitle {
   margin-top: 4vh;
 }
 
@@ -128,7 +112,19 @@
   font-size: 0.8rem;
 }
 
-@media(max-width: 577px){
+.skillTitle {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.singleSkill img {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+@media(max-width: 577px) {
   .containerHeight {
     padding: 2vw;
   }
