@@ -69,17 +69,19 @@ const TopSection = () => {
                   <a
                     href="https://github.com/mattyx22"
                     className={styles.singleLink}
+                    target="_blank"
                   >
                     GitHub
                   </a>
                   <span> / </span>
-                  <a href="/CV_Mateusz_Komar_PL.pdf" className={styles.singleLink}>
+                  <a href="/CV_Mateusz_Komar_PL.pdf" className={styles.singleLink} target="_blank">
                     CV
                   </a>
                   <span> / </span>
                   <a
                     href="https://www.behance.net/mattygt"
                     className={styles.singleLink}
+                    target="_blank"
                   >
                     Behance
                   </a>

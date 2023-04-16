@@ -18,7 +18,7 @@ export default function handler(req, res) {
       dates: 'October 2019 - Present',
       description: [
         'React / Express applications for internal use',
-        'E-commerce store developement',
+        'E-commerce stores developement',
         'Wordpress and Woocommerce',
         'Internet marketing',
         'Graphic design in Adobe Photoshop',

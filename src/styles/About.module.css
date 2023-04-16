@@ -124,7 +124,7 @@
   transform: translateX(-50%);
 }
 
-@media(max-width: 577px) {
+@media(max-width: 767px) {
   .containerHeight {
     padding: 2vw;
   }
