@@ -124,6 +124,7 @@
   transform: translateX(-50%);
 }
 
+
 @media(max-width: 767px) {
   .containerHeight {
     padding: 2vw;
@@ -132,5 +133,11 @@
   .rightPanel {
     border: 0;
     padding-left: 2vw;
+  }
+}
+
+@media (max-width: 1399px){
+  .singleSkill {
+    margin-bottom: 1vh;
   }
 }
