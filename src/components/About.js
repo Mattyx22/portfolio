@@ -33,7 +33,7 @@ const About = () => {
                 </motion.h2>
 
                 <motion.div style={{ position, top: "0vh", opacity: opacityDescription }}>
-                    <Row>
+                    <Row className={styles.marginBottom}>
                         <Col xs="12" md="6">
                             <Row className={styles.introduction}>
                                 <p className={styles.cardTitle}>

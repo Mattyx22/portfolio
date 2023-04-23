@@ -31,6 +31,7 @@
   position: absolute;
   bottom: 6vh;
   margin-left: 8vw;
+  width: 70vw;
 }
 
 .links {
@@ -100,6 +101,10 @@
 
 .background {
   background-color: #26103f;
+}
+
+.scale {
+  transform: scale(0.75);
 }
 
 @media (max-width: 586px) {
