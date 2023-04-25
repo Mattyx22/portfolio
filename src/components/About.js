@@ -132,7 +132,6 @@ const About = () => {
                                     Tools
                                 </p>
                                 <Col xs="4" xxl="2" className={styles.singleSkill}>
-
                                     <Image src="/skills/github.svg" width={64} height={64} alt="github" />
                                     <p className={styles.skillTitle}>Git</p>
                                 </Col>
@@ -152,6 +151,10 @@ const About = () => {
                                 <Col xs="4" xxl="2" className={styles.singleSkill}>
                                     <Image src="/skills/xd.svg" width={64} height={64} alt="adobe xd" />
                                     <p className={styles.skillTitle}>Adobe XD</p>
+                                </Col>
+                                <Col xs="4" xxl="2" className={styles.singleSkill}>
+                                    <Image src="/skills/jira.svg" width={64} height={64} alt="jira" />
+                                    <p className={styles.skillTitle}>Jira</p>
                                 </Col>
                             </Row>
 
