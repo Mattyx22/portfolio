@@ -7,9 +7,8 @@ export default function handler(req, res) {
       company: 'Freelance',
       dates: 'July 2022 - Present',
       description: [
-        'Web applications (React.js and Express.js)',
-        'Mobile applications (Flutter)',
-        'Design of apps (Figma)'
+        'Developement of React, Next.js, Express and Flutter applications',
+        'Building Wordpress / Woocommerce websites',
       ],
     },
     {
@@ -17,14 +16,14 @@ export default function handler(req, res) {
       company: 'Bosch Car Service / France Auto Service',
       dates: 'October 2019 - Present',
       description: [
-        'React / Express applications for internal use',
-        'E-commerce stores developement',
-        'Wordpress and Woocommerce',
+        'Building React and Express applications for internal use',
+        'Development and administration of online stores and websites for many European markets',
+        'Creating Wordpress (Woocommerce) websites',
         'Internet marketing',
         'Graphic design in Adobe Photoshop',
-        'Providing IT service',
-        'SEO / SEM',
-        'Google and Facebook Ads campaigns'
+        'IT equipment service (hardware and software)',
+        'SEO',
+        'Google Ads and Facebook Ads campaigns'
       ],
     },
     {
@@ -34,7 +33,7 @@ export default function handler(req, res) {
       description: [
         'Implementation of a local network',
         'Configuration of computers, network printers, and SubiektGT',
-        'Creation and administration of the website (kaldera.com.pl)',
+        'Developement and administration of the website (kaldera.com.pl)',
         'Social media administration',
         'SEO'
       ],
