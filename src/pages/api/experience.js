@@ -7,8 +7,8 @@ export default function handler(req, res) {
       company: 'Freelance',
       dates: 'July 2022 - Present',
       description: [
-        'Developement of React, Next.js, Express and Flutter applications',
-        'Building Wordpress / Woocommerce websites',
+        'Development of React, Next.js, Express, and Flutter applications',
+        'Building WordPress / WooCommerce website',
       ],
     },
     {
@@ -18,8 +18,7 @@ export default function handler(req, res) {
       description: [
         'Building React and Express applications for internal use',
         'Development and administration of online stores and websites for many European markets',
-        'Creating Wordpress (Woocommerce) websites',
-        'Internet marketing',
+        'Creating WordPress (WooCommerce) websites',
         'Graphic design in Adobe Photoshop',
         'IT equipment service (hardware and software)',
         'SEO',
