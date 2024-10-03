@@ -46,6 +46,10 @@ const Work = () => {
             </motion.div>
 
             <Row>
+                <div className={styles.workContainerRight}>
+                    <video src="/work/targmed-refundacja.mp4" loop autoPlay muted className={styles.video}></video>
+                </div>
+
                 <div className={styles.workContainerLeft}>
                     <video src="/work/cw.mp4" loop autoPlay muted className={styles.video}></video>
                 </div>
