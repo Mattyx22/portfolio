@@ -34,8 +34,87 @@
   margin-bottom: 20vh;
 }
 
+
+/* === */
+.videoContainer {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* Ensure the container wraps the video properly */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: background-color 0.5s ease, opacity 0.5s ease;
+  z-index: 100; 
+  flex-direction: column;
+    border-radius: 19px;
+    background: rgba(49, 22, 84, 0.35);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+}
+
+.overlay:hover {
+ cursor: context-menu;
+}
+
+.overlay span {
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.videoContainer:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.7); 
+  opacity: 1;
+}
+
+.videoContainer:hover .overlay span {
+  opacity: 1;
+}
+
+.overlay div {
+  color: white;
+}
+
+.firstLine {
+  font-size: 2rem;  
+  font-weight: bold;  
+}
+
+.secondLine {
+  font-size: 1rem;  
+  padding: 15px;
+  width: 100%;
+}
+
+.secondLine p {
+  margin-bottom: 0;
+}
+
+.hr {
+  margin: 0;
+}
+
+.stack {
+  width: 100%;
+}
+
+.stack th, .stack td {
+  width: 50%;
+}
+
 @media (max-width: 1330px) {
-  .video {
+  .video, .overlay {
     width: 50%;
   }
 
@@ -45,12 +124,16 @@
 }
 
 @media (max-width: 858px) {
-  .video {
+  .video, .overlay {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
     border-radius: 30px;
+  }
+
+  .overlay {
+    height: 100%;
   }
 
   .workContainerLeft,
