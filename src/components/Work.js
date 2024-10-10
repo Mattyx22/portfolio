@@ -53,7 +53,7 @@ const Work = () => {
                             <div className={styles.firstLine}>Targmed-refundacja.pl</div>
                             <div className={styles.secondLine}>
                                 <p>Creating an online store that fulfills orders with NFZ (Polish National Health Fund) subsidies.</p>
-                                <p>A user with a reimbursement order from a doctor, provides the PESEL number and order pin. The store connects to the NHF API to verify the order and determine the health fund's surcharge.</p>
+                                <p>A user with a reimbursement order from a doctor, provides the PESEL number and order pin. The store connects to the NHF API to verify the order and determine the health fund`&apos;`s surcharge.</p>
                                 <p>Once verified correctly, the user receives lower prices at which to place the order.</p>
                                 <hr className="hr" />
                                 <table className={styles.stack}>
