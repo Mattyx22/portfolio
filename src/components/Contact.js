@@ -15,7 +15,7 @@ const Contact = () => {
         <div className={styles.contactFooter}>
           <div className={styles.footerPosition}>
             <span>
-              © 2023 Mateusz Komar
+              © 2025 Mateusz Komar
             </span>
             <a href="https://www.behance.net/mattygt" className={styles.iconLink} target="_blank"><FontAwesomeIcon icon={faBehance} /></a>
             <a href="https://github.com/Mattyx22" className={styles.iconLink} target="_blank"><FontAwesomeIcon icon={faGithub} /></a>

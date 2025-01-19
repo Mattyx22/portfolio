@@ -52,23 +52,25 @@ const Work = () => {
                         <div className={styles.overlay}>
                             <div className={styles.firstLine}>Targmed-refundacja.pl</div>
                             <div className={styles.secondLine}>
-                                <p>Creating an online store that fulfills orders with NFZ (Polish National Health Fund) subsidies.</p>
-                                <p>A user with a reimbursement order from a doctor, provides the PESEL number and order pin. The store connects to the NHF API to verify the order and determine the health fund`&apos;`s surcharge.</p>
-                                <p>Once verified correctly, the user receives lower prices at which to place the order.</p>
+                                <p>The store connects to NFZ&apos;s API to verify patients&apos; reimbursement order and lets them order with lower prices.</p>
                                 <hr className="hr" />
                                 <table className={styles.stack}>
-                                    <tr>
-                                        <th>E-Commerce:</th>
-                                        <th>API:</th>
-                                    </tr>
+                                    <thead>
+                                        <tr>
+                                            <th>E-Commerce:</th>
+                                            <th>API:</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
                                     <tr>
                                         <td>- Wordpress / Woocommerce</td>
-                                        <td>- Python</td>
+                                        <td>- Python and Soap API</td>
                                     </tr>
                                     <tr>
                                         <td>- PHP</td>
-                                        <td>- Node.js</td>
+                                        <td>- Node.js and Rest API</td>
                                     </tr>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>

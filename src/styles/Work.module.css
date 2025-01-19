@@ -97,6 +97,14 @@
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .secondLine {
+    font-size: 0.8rem;  
+    padding: 10px;
+    width: 100%;
+  }
+}
+
 .secondLine p {
   margin-bottom: 0;
 }

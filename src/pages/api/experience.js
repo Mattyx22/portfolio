@@ -7,8 +7,19 @@ export default function handler(req, res) {
       company: 'Freelance',
       dates: 'July 2022 - Present',
       description: [
-        'Development of React, Next.js, Express, and Flutter applications',
-        'Building WordPress / WooCommerce website',
+        'Development of applications using React, Next.js, Express, and Flutter',
+        'Creation and customization of WordPress and WooCommerce websites',
+      ],
+    },
+    {
+      title: 'E-commerce Administrator',
+      'company': 'Target - Medical wholesale',
+      dates: 'January 2024 - Present',
+      description: [
+        'Development and management of e-commerce platforms, including WooCommerce and Selly',
+        'Administration and oversight of the ERP system',
+        'Design, development, and maintenance of a comprehensive dropshipping system',
+        'Creation and management of an online store integrated with the NFZ API, facilitating secure exchange of patient reimbursement information',
       ],
     },
     {
@@ -16,13 +27,13 @@ export default function handler(req, res) {
       company: 'Bosch Car Service / France Auto Service',
       dates: 'October 2019 - Present',
       description: [
-        'Building React and Express applications for internal use',
-        'Development and administration of online stores and websites for many European markets',
-        'Creating WordPress (WooCommerce) websites',
-        'Graphic design in Adobe Photoshop',
-        'IT equipment service (hardware and software)',
-        'SEO',
-        'Google Ads and Facebook Ads campaigns'
+        'Designing and developing React and Express applications for internal use',
+        'Building and managing online stores and websites tailored to various European markets',
+        'Creating and maintaining WordPress (WooCommerce) websites',
+        'Crafting graphic designs using Adobe Photoshop',
+        'Providing IT equipment servicing, including hardware and software support',
+        'Implementing SEO strategies to optimize online visibility',
+        'Managing Google Ads and Facebook Ads campaigns for effective digital marketing'
       ],
     },
     {
@@ -30,11 +41,11 @@ export default function handler(req, res) {
       company: 'Kaldera - systemy grzewcze',
       dates: 'August 2019 - September 2019',
       description: [
-        'Implementation of a local network',
-        'Configuration of computers, network printers, and SubiektGT',
-        'Developement and administration of the website (kaldera.com.pl)',
-        'Social media administration',
-        'SEO'
+        'Implementation and setup of local networks',
+        'Configuration of computers, network printers, and the SubiektGT system',
+        'Development and management of the website (kaldera.com.pl)',
+        'Administration and management of social media channels',
+        'Execution of SEO strategies to enhance online visibility'
       ],
     },
     {
@@ -42,9 +53,9 @@ export default function handler(req, res) {
       company: 'Dolnet Group Sp. Z.O.O',
       dates: 'July 2018 - August 2018',
       description: [
-        'Configuration of network devices',
-        'Internet service repairs',
-        'Fiber internet service repairs'
+        'Configuration and setup of network devices',
+        'Troubleshooting and repairing internet service issues',
+        'Maintenance and repair of fiber internet services'
       ],
     }
   ]
